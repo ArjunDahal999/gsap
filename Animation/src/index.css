@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'custom-font';
+    src: url('../public/fonts/custom-font.otf') format('opentype');
+  
+  }
+@font-face {
+    font-family: 'nats';
+    src: url('../public/fonts/NATS-Regular.ttf') format('opentype');
+  }
+  
+
+  .text-neon-white {
+    font-size: 20px;
+    color: #fff;
+  }
+  .text-neon-white:hover {
+    font-size: 20px;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #766e6e;
+    color:#fff
+  }
+
+  body{
+    background: rgb(22, 11, 40);
+background: radial-gradient(circle, rgb(60, 39, 95) 0%, rgb(22, 13, 32) 100%);
+  }
+
+  #checkbox {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    background: rgba(40,40,40,0.2);
+    color:black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    left: -5px;
+    top: -5px;
+}
+
+#checkbox:checked {
+    background: rgba(209, 0, 245, 1);
+}
+  
+
+::-webkit-scrollbar{
+  width:12px;
+  background-color: #1D122C
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient( transparent, rgb(255, 255, 255));
+   border-radius: 6px;
+}
+
+
+
+
+*:focus {
+  outline: none;
+}
